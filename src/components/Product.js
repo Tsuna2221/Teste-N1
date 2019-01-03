@@ -56,7 +56,7 @@ class Product extends Component {
     }
 
     state = {
-
+        searchValue: ''
     }
 
     addToCart = () => {

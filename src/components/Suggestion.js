@@ -21,28 +21,9 @@ class Suggestion extends Component {
     }
 
     drawContainer = () => {
-        var items = [
-            {
-                title: 'Action Figure Doctor Strange e Burning Flame Set - S.H.Figuart',
-                price: '725,90',
-                discount: '624,90',
-                imgName: DrStrange
-            },
-            {
-                title: 'Action Figures - Super Mario Bros - Bandai',
-                price: '189,90',
-                discount: '149,90',
-                imgName: Mario
-            },
-            {
-                title: 'Figura Street Fighter Ryu',
-                price: '5.500,20',
-                discount: '5.259,00',
-                imgName: Ryu
-            },
-        ]
+        var items = [...this.props.items]
 
-        return items.map(item => {
+        return items.splice(1,3).map(item => {
             var {title, price, discount, imgName} = item
 
             return (

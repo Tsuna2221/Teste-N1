@@ -1,0 +1,24 @@
+.search-container{
+    position: absolute;
+    margin-top: 15px;
+    width: auto;
+}
+
+.search-item{
+    background-color: #f3f3f3;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.search-item:nth-child(odd){
+    background-color: #F8F8F8;
+}
+
+.search-item > img{
+    height: inherit;
+}
+
+.s-item-details{
+    padding: 0 20px;
+}

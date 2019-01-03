@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import SearchModal from './SearchModal'
+
 import Logo from '../assets/logo-n1.png'
 import Cart from '../assets/shopping-cart.svg'
 
@@ -10,14 +12,15 @@ class Header extends Component {
                 <div className="header-container">
                     <img src={Logo} alt=""/>
                     <div className="head-item">
+                    {/* eslint-disable-next-line */}
                         <a href="#" className="navi-item">Games</a>
+                    {/* eslint-disable-next-line */}
                         <a href="#" className="navi-item">Presentes</a>
+                    {/* eslint-disable-next-line */}
                         <a href="#" className="navi-item hl">Sale</a>
                     </div>
 
-                    <div className="head-searchbar">
-                        <input placeholder="Digite o que procura" type="text"/>
-                    </div>
+                    <SearchModal products={this.props.products}></SearchModal>
 
                     <div className="head-cart">
                         <img src={Cart} alt=""/>
@@ -28,9 +31,7 @@ class Header extends Component {
         );
     }
 
-    state = {
 
-    }
 }
 
 export default Header;

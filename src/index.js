@@ -8,5 +8,6 @@ import './styles/Product.css';
 import './styles/Suggestion.css';
 import './styles/Footer.css';
 import './styles/Modal.css';
+import './styles/SearchModal.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
