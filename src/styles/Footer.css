@@ -1,0 +1,36 @@
+#app-footer{
+    width: 100%;
+    height: 106px;
+    display: flex;
+}
+
+#app-footer > div{
+    display: flex;
+    align-items: center;
+}
+
+.foot-left-s{
+    width: 515px;
+    height: inherit;
+    background-color: #0F4156;
+    justify-content: flex-end;
+}
+
+.foot-left-s > img{
+    margin-right: 40px;
+}
+
+.foot-right-s{
+    width: inherit;
+    height: inherit;
+    background-color: #4EC2DD;
+}
+
+.foot-right-s > span{
+    margin-left: 40px;
+}
+
+.foot-own{
+    font-size: 14px;
+    color: #fff;
+}

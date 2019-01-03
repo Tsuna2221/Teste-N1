@@ -1,0 +1,159 @@
+#app-product{
+    width: min-content;
+    margin: 0 auto;
+}
+
+.prod-navi{
+    margin: 20px 0; /*res*/
+}
+
+.navi-nb{
+    color: var(--def-white);
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: none !important;
+}
+
+.navi-arrow{
+    width: 5px;
+    height: 10px;
+    margin: 0 20px;
+}
+
+.prod-details{
+    display: flex;
+}
+
+.details-images{
+    display: flex;
+}
+
+.images-slides{
+    width: 80px;
+}
+
+.images-slides > img{
+    width: inherit;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 4px;
+}
+
+.images-selected{
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.details-content{
+    width: 600px;
+}
+
+.content-title > p{
+    margin: 0;
+    font-size: 36px;
+    color: var(--def-white);
+}
+
+.content-price{
+    margin-top: 44px;
+    padding: 17px 24px;
+    background-color: #F8F8F8;
+}
+
+.content-price > p{
+    font-size: 18px;
+    color: var(--def-white);
+}
+
+.price-highlight{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.price-btn{
+    width: fit-content;
+    padding: 11px 23px;
+    background-color: #71CE4B;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #75AC5E;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content-freight{
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #4EC2DD; 
+    padding: 20px 26px;
+    margin: 19px auto 0 auto;
+}
+
+.freight-stg{
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.freight-input{
+    display: flex;
+    margin-top: 30px;
+}
+
+.f-input-field{
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0px 13px;
+    box-shadow: 0px 3px 6px 1px #00000029;
+}
+
+.f-input-field::placeholder{
+    color: var;
+}
+
+.w-max{
+    width: calc(217px - 26px)
+}
+
+.w-min{
+    margin: 0 10px;
+    padding: 0 30px;
+    width: 39px;
+}
+
+.f-input-btn{
+    padding: 15px 37px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #0F4156;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.def-stg{
+    text-align: center;
+    color: #0F4156;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.prod-desc > h2{
+    margin: 85px 0 auto 0;
+}
+
+.desc-about{
+    font-size: 18px;
+    color: var(--def-white);
+    line-height: 30px;
+}

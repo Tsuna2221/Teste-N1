@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+head, body{
+    margin: 0;
+}
+
+p, a, span, label, strong, input, h1, h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--def-white);
+}
+
+.hl{
+    color: var(--hl-blue) !important;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#main-container{
+    /*width: 1200px; /*Res*/
+    /*margin: 0 auto; /*Res*/
+}
+
+/*Variables*/
+
+:root {
+    --hl-blue: #4EC2DD;
+    --def-white: #c8c8c8;
+}
+
+/*Responsiveness*/
+
+
+/*+1360p */
+@media (min-width: 1360px) and (max-width: 1799px) {
+    .head-searchbar > input{
+        width: 535px;
+    }
+}
+
+/*+1920p */
+@media (min-width: 1800px) {
+    .prod-navi{
+        margin: 37px 0;
+    }
+    .navi-item:nth-last-child(3) {
+        margin-left: 27px;
+    }
+    .navi-item:nth-last-child(1) {
+        margin-right: 68px;
+    }
+}
