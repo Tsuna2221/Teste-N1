@@ -97,7 +97,7 @@
         text-align: center;
     }
 
-    .freight-input{
+    .freight-input, .sugg-container{
         flex-direction: column;
     }
 
@@ -127,10 +127,6 @@
 
     .price-highlight {
         font-size: 110px !important;
-    }
-
-    .sugg-container{
-        flex-direction: column;
     }
 
     .sugg-item{
@@ -168,11 +164,7 @@
     }
 
     /*Footer*/
-    .foot-right-s {
-        width: -webkit-fill-available;
-    }
-    
-    .foot-left-s  > img{
+    .foot-right-s, .foot-left-s  > img {
         width: -webkit-fill-available;
     }
 

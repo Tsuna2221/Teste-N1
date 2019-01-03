@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Mario from '../assets/mario.png'
 import Arrow from '../assets/arrow.svg'
 
 class Product extends Component {
     render() {
+        var { title, price, discount, imgName } = this.props.product
         return (
             <div id='app-product'>
                 <div className="prod-navi">
@@ -18,20 +18,20 @@ class Product extends Component {
                 <div className="prod-details">
                     <div className="details-images">
                         <div className="images-slides">
-                            <img src={Mario} alt=""/>
+                            <img src={imgName} alt=""/>
                         </div>
                         
-                        <img className="images-selected" src={Mario} alt=""/>
+                        <img className="images-selected" src={imgName} alt=""/>
                     </div>
 
                     <div className="details-content">
                         <div className="content-title">
-                            <p>Action figure bombeiro Mario topzeira das galáxias </p>
+                            <p>{title}</p>
                         </div>
 
                         <div className="content-price">
-                            <p>de R$ 189,90</p>
-                            <p>por <strong className="price-highlight hl">R$ 149,90</strong></p>
+                            <p>de R$ {'price'}</p>
+                            <p>por <strong className="price-highlight hl">R$ {discount}</strong></p>
                             <div onClick={this.addToCart} className="price-btn">Compra ae</div>
                         </div>
 

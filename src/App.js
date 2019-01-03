@@ -17,7 +17,7 @@ class App extends Component {
 			<div id='App'>
 				<div id="main-container">
 					<Header cart={this.state.currentCart} products={this.state.items}></Header>
-					<Product update={this.update}></Product>
+					<Product update={this.update} product={this.state.items[0]}></Product>
 					<Suggestion items={this.state.items}></Suggestion>
 					<Modal></Modal>
 				</div>
@@ -54,10 +54,6 @@ class App extends Component {
 				imgName: Ryu
 			},
         ]
-	}
-
-	componentDidMount = () => {
-		console.log(this.state)
 	}
 
 	update = (item) => {
