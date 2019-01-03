@@ -6,6 +6,7 @@
         position: relative;
     }
 
+    /*Header*/
     .header-container{
         height: 260px;
     }
@@ -14,12 +15,35 @@
         width: 240px;
     }
 
+    /*Product*/
+    #app-product {
+        width: 90% !important;
+    }
+
+    .head-item, .head-searchbar, .head-cart{
+        display: none;
+    }
+
     .prod-details {
         flex-direction: column !important;
     }
 
-    .images-slides > img {
-        width: 380px !important;
+    .prod-navi {
+        margin: 60px auto;
+        width: fit-content !important;
+    }
+    
+    .navi-nb{
+        font-size: 50px;
+    }
+
+    .navi-arrow{
+        width: 18px;
+        height: auto;
+    }
+
+    .details-images {
+        flex-direction: column-reverse !important;
     }
 
     .images-selected {
@@ -28,8 +52,8 @@
         margin-left: 0px !important;
     }
 
-    .details-images {
-        flex-direction: column-reverse !important;
+    .images-slides > img {
+        width: 380px !important;
     }
 
     .details-content{
@@ -37,17 +61,13 @@
         margin: 0 auto;
     }
 
+    .content-title{
+        margin: 80px 0;
+    }
+
     .content-title > p {
         font-size: 75px;
         text-align: center;
-    }
-
-    #app-product {
-        width: 90% !important;
-    }
-
-    .prod-navi {
-        width: fit-content !important;
     }
 
     .content-price > p {
@@ -55,8 +75,10 @@
         text-align: center;
     }
 
-    .price-highlight {
-        font-size: 110px !important;
+    .desc-about{
+        line-height: 95px;
+        font-size: 75px;
+        text-align: center;
     }
 
     .price-btn, .f-input-btn{
@@ -79,6 +101,8 @@
         flex-direction: column;
     }
 
+
+    /*Suggestions*/
     #app-suggestion{
         width: fit-content;
         margin: 0 auto;
@@ -101,10 +125,8 @@
         font-size: 105px;
     }
 
-    .desc-about{
-        line-height: 95px;
-        font-size: 75px;
-        text-align: center;
+    .price-highlight {
+        font-size: 110px !important;
     }
 
     .sugg-container{
@@ -145,6 +167,7 @@
         font-size: 115px;
     }
 
+    /*Footer*/
     .foot-right-s {
         width: -webkit-fill-available;
     }
@@ -160,9 +183,5 @@
 
     .foot-own {
         font-size: 65px;
-    }
-
-    .head-item, .head-searchbar, .head-cart{
-        display: none;
     }
 }
