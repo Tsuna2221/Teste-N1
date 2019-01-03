@@ -30,7 +30,7 @@ class Product extends Component {
                         </div>
 
                         <div className="content-price">
-                            <p>de R$ {'price'}</p>
+                            <p>de R$ {price}</p>
                             <p>por <strong className="price-highlight hl">R$ {discount}</strong></p>
                             <div onClick={this.addToCart} className="price-btn">Compra ae</div>
                         </div>
