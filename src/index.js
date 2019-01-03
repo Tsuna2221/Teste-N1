@@ -9,5 +9,6 @@ import './styles/Suggestion.css';
 import './styles/Footer.css';
 import './styles/Modal.css';
 import './styles/SearchModal.css';
+import './styles/Queries.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

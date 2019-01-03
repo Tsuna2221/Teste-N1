@@ -2,6 +2,7 @@
     position: absolute;
     margin-top: 15px;
     width: auto;
+    transition: .4s ease;
 }
 
 .search-item{

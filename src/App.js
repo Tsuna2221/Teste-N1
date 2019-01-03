@@ -15,11 +15,13 @@ class App extends Component {
 	render() {
 		return (
 			<div id='App'>
-				<Header cart={this.state.currentCart} products={this.state.items}></Header>
-				<Product update={this.update}></Product>
-				<Suggestion items={this.state.items}></Suggestion>
+				<div id="main-container">
+					<Header cart={this.state.currentCart} products={this.state.items}></Header>
+					<Product update={this.update}></Product>
+					<Suggestion items={this.state.items}></Suggestion>
+					<Modal></Modal>
+				</div>
 				<Footer></Footer>
-				<Modal></Modal>
 			</div>
 		);
 	}

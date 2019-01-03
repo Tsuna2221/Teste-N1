@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-import DrStrange from '../assets/drstr.jpg'
-import Mario from '../assets/mario-2.jpg'
-import Ryu from '../assets/ryu.jpg'
-
 class Suggestion extends Component {
     render() {
         return (
