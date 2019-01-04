@@ -4,10 +4,12 @@ class SearchModal extends Component {
     render() {
         return (
             <div className="head-searchbar">
-                <input onChange={this.handleInput} placeholder="Digite o que procura" type="text"/>
+                <input onChange={this.handleInput} className="searchbar-input input-st" placeholder="Digite o que procura" type="text"/>
 
                 <div className="search-container">
-                    {this.drawSearch()}
+                    <div className="search-cell">
+                        {this.drawSearch()}
+                    </div>
                 </div>
             </div>
         );
@@ -17,22 +19,31 @@ class SearchModal extends Component {
         filteredArray: []
     }
 
+    componentDidMount = () => {
+        document.onclick = this.closeModal
+
+        var ctng = document.querySelector('.head-searchbar')
+        var search = document.querySelector('.search-container')
+        search.style.width = ctng.offsetWidth + 'px'
+    }
+
     drawSearch = () => {
         var filtered = this.state.filteredArray
         var input = this.state.inputValue
 
-        if(filtered.length > 0 && input.length > 0){
+        if(filtered.length > 0 && input.length > 0 && this.state.isFocused){
             return filtered.map(item => {
                 var { title, imgName, discount } = item
-
+                
                 return (
-                <div className="search-item">
-                    <img src={imgName} alt=""/>
-                    <div className="s-item-details">
-                        <p>{title}</p>
-                        <strong className="hl">por R$ {discount}</strong>
+                /* eslint-disable-next-line */
+                <a key={title} href="#" id="cntr" className="search-item">
+                    <img id="cntr" className="srch-p" src={imgName} alt=""/>
+                    <div id="cntr" className="s-item-details">
+                        <p id="cntr" className="s-item-title">{title}</p>
+                        <p id="cntr" className="s-item-title">por <strong id="cntr"  className="s-item-price hl">R$ {discount}</strong></p>
                     </div>
-                </div>
+                </a>
                 )
             })
         }
@@ -49,14 +60,21 @@ class SearchModal extends Component {
             }
         });
 
-        console.log(this.state.filteredArray)
-
         this.setState({
             filteredArray: filtered,
             inputValue: input
         })
     }
 
+    closeModal = (e) => {
+        var searchbar = document.querySelector('.searchbar-input')
+
+        if(e.target === searchbar || e.target.id === 'cntr'){
+            this.setState({isFocused: true})
+        }else{
+            this.setState({isFocused: false})
+        }
+    }
 }
 
 export default SearchModal;

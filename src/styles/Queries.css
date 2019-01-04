@@ -1,6 +1,6 @@
 /*Smartphones*/
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
     #App{
         width: max-content;
         position: relative;
@@ -175,5 +175,35 @@
 
     .foot-own {
         font-size: 65px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1359px){
+    #main-container {
+        width: 1125px;
+    }
+    
+    /**/
+    .head-searchbar > input {
+        width: 410px;
+    }
+
+    /**/
+    .content-title > p {
+        font-size: 26px;
+    }    
+
+    /**/
+    .sg-item-img > img {
+        width: 218px;
+        height: 218px;
+    }
+
+    .sg-item-price {
+        bottom: 60px;
+    }
+
+    .sugg-item{
+        padding: 10px 10px 25px 10px;
     }
 }

@@ -5,14 +5,18 @@ import Arrow from '../assets/arrow.svg'
 class Product extends Component {
     render() {
         var { title, price, discount, imgName } = this.props.product
+
         return (
             <div id='app-product'>
                 <div className="prod-navi">
-                    <span className="navi-nb">N1</span>
+                    {/* eslint-disable-next-line */}
+                    <a href="#" className="navi-nb hov">N1</a>
                         <img className="navi-arrow" src={Arrow} alt=""/>
-                    <span className="navi-nb">action figures</span>
+                    {/* eslint-disable-next-line */}
+                    <a href="#" className="navi-nb hov">action figures</a>
                         <img className="navi-arrow" src={Arrow} alt=""/>
-                    <span className="navi-nb hl">Super Mario</span>
+                    {/* eslint-disable-next-line */}
+                    <a href="#" className="navi-nb hl">Super Mario</a>
                 </div>
 
                 <div className="prod-details">
@@ -38,8 +42,8 @@ class Product extends Component {
                         <div className="content-freight">
                             <h2 className="freight-stg">Calcule o frete</h2>
                             <div className="freight-input">
-                                <input className="f-input-field w-max" placeholder="00000" maxLength="5" type="text"/>
-                                <input className="f-input-field w-min" placeholder="000" maxLength="3" type="text"/>
+                                <input className="f-input-field input-st w-max" placeholder="00000" maxLength="5" type="text"/>
+                                <input className="f-input-field input-st w-min" placeholder="000" maxLength="3" type="text"/>
                                 <div className="f-input-btn">Calcular</div>
                             </div>
                         </div>

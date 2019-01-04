@@ -12,9 +12,9 @@ const Header = (props) => {
                 <img src={Logo} alt=""/>
                 <div className="head-item">
                 {/* eslint-disable-next-line */}
-                    <a href="#" className="navi-item">Games</a>
+                    <a href="#" className="navi-item hov">Games</a>
                 {/* eslint-disable-next-line */}
-                    <a href="#" className="navi-item">Presentes</a>
+                    <a href="#" className="navi-item hov">Presentes</a>
                 {/* eslint-disable-next-line */}
                     <a href="#" className="navi-item hl">Sale</a>
                 </div>

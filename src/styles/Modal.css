@@ -41,6 +41,7 @@
     font-size: 165%;
     text-align: center;
     margin: 100px 0;
+    color: var(--hl-blue);
 }
 
 .modal-btn{
@@ -52,4 +53,9 @@
     font-size: 18px;
     font-weight: 800;
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.modal-btn:hover{
+    box-shadow: 0px 0px 2px 2px #0F4156;
 }

@@ -1,10 +1,9 @@
 #app-product{
-    width: min-content;
     margin: 0 auto;
 }
 
 .prod-navi{
-    margin: 20px 0; /*res*/
+    margin: 20px 0;
 }
 
 .navi-nb{
@@ -49,7 +48,7 @@
 }
 
 .content-title > p{
-    margin: 0;
+    margin: 0px 20px;
     font-size: 36px;
     color: var(--def-white);
 }
@@ -82,6 +81,11 @@
     color: #fff;
     cursor: pointer;
     user-select: none;
+    transition: .3s ease;
+}
+
+.price-btn:hover{
+    box-shadow: 0px 2px 2px 2px #75AC5E;
 }
 
 .content-freight{
@@ -138,6 +142,11 @@
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
+    transition: .3s ease;
+}
+
+.f-input-btn:hover{
+    box-shadow: 0px 0px 2px 2px #0F4156;
 }
 
 .def-stg{

@@ -15,8 +15,9 @@ class App extends Component {
 	render() {
 		return (
 			<div id='App'>
+				<Header cart={this.state.currentCart} products={this.state.items}></Header>
 				<div id="main-container">
-					<Header cart={this.state.currentCart} products={this.state.items}></Header>
+					
 					<Product update={this.update} product={this.state.items[0]}></Product>
 					<Suggestion items={this.state.items}></Suggestion>
 					<Modal></Modal>

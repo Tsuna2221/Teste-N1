@@ -5,8 +5,41 @@ head, body{
     overflow-x: hidden !important;
 }
 
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(153, 153, 153); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 129, 129); 
+}
+
 p, a, span, label, strong, div, input, h1, h2{
     font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+a.hov{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: .27s ease;
+}
+
+a.hov:hover{
+    border-bottom: 1px solid var(--def-white);
+}
+
+a.hl:hover{
+    border-bottom: 1px solid var(--hl-blue);
 }
 
 input{
@@ -23,6 +56,16 @@ input::placeholder{
     font-weight: 800;
     text-transform: uppercase;
 }
+
+
+.input-st{
+    transition: .25s ease;
+}
+
+.input-st:focus{
+    box-shadow: 0px 2px 7px 3px #00000029;
+}
+
 
 #main-container{
     width: 1200px;

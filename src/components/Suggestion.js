@@ -31,8 +31,8 @@ class Suggestion extends Component {
                     <p className="sg-item-title">{title}</p>
 
                     <div className="sg-item-price">
-                        <p>de {price}</p>
-                        <strong className="sg-price-highlight hl">por {discount}</strong>
+                        <p>de R$ {price}</p>
+                        <strong className="sg-price-highlight hl">por R$ {discount}</strong>
                     </div>
                 </div>
             )
